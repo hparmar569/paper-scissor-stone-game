@@ -1,0 +1,27 @@
+import java.util.*;
+public class Example
+{ 
+    public static void main(String[]args)
+    {
+      Scanner c=new Scanner(System.in);
+      
+      System.out.println("Enter input of 1st player");
+      String player1=c.nextLine();
+      
+      System.out.println("Enter input of 2nd player");
+      String player2=c.nextLine();
+      
+      if( player1.equalsIgnoreCase("stone") & player2.equalsIgnoreCase("scissor") | player1.equalsIgnoreCase("paper") & player2.equalsIgnoreCase("stone") | player1.equalsIgnoreCase("scissor") & player2.equalsIgnoreCase("paper") )
+      System.out.println("Player1 wins");
+    
+      else if( player1.equalsIgnoreCase(player2) )
+      System.out.println("It's a Tie");
+      
+      else
+      System.out.println("Player2 wins");
+
+     
+    }
+    
+} 
+       
